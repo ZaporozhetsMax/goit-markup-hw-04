@@ -56,9 +56,9 @@ ul {
 }
 
 /*---------------------------- Header portfolio studio----------------------------- */
-.container.container-header {
-  /* border-bottom: 1px solid #ececec; */
-}
+/* .container.container-header {
+  border-bottom: 1px solid #ececec;
+} */
 
 header {
   border-bottom: 1px solid #ececec;
@@ -123,11 +123,21 @@ header .container {
   list-style-type: none;
   display: flex;
   margin-left: auto;
+  
 }
 
 .header-mail {
+  display: flex;
   margin-right: 50px;
+  align-items: center;
 }
+
+
+/* .header-mail-icon{
+  margin:0;
+  padding: 0;
+  
+} */
 
 .list>li:not(:last-child) {
   margin-right: 50px;
@@ -142,13 +152,25 @@ header .container {
   letter-spacing: 0.02em;
   color: var(--second-color);
   text-decoration: none;
+  fill:var(--second-color);
+
+  align-items: center;
 }
+
+.header-mail-icon{
+  margin-right: 10px;  
+}
+.header-phone{display: flex;
+align-items: center;}
+
+.header-phone-icon{margin-right: 10px;}
 
 .header-phone:focus,
 .header-phone:hover,
 .header-mail:focus,
 .header-mail:hover {
   color: var(--accent-color);
+  fill: currentColor;
 }
 
 /*----------------------------- Main portfolio studio----------------------- */
@@ -291,6 +313,15 @@ header .container {
   margin-left: 30px;
 }
 
+.benefits-icon{
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  max-width: 270px;
+  background: var(--background-btn);
+    border-radius: 4px;
+}
+/* .benefits-icon-item{} */
+
 .benefits-text {
   font-weight: 700;
   font-size: 14px;
@@ -373,13 +404,24 @@ header .container {
   text-align: center;
 }
 /*---- Постійні клієнти studio ----*/
-.regular-customers{
+.regular-clients{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
   color: var(--primery-color);
+}
+.clients{
+  /* display:block; */
+display: flex;
+  /* list-style-type: none; */
+  /* display: inline-block; */
+  
+}
+.client-icons{
+  border: #2196f3;
+
 }
 /*------------------------- Footer portfolio studio-------------------------*/
 .footer-studio {
