@@ -19,7 +19,9 @@ body {
   height: 1880px;
   background: #ffffff; */
 }
-
+/* a {text-decoration: none;
+font-family: inherit;
+color: inherit;} */
 p,
 h1,
 h2,
@@ -214,20 +216,18 @@ align-items: center;}
 .main-link-btn {
   list-style-type: none;
 }
-.main-link:hover{
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+
 
 /* Секція ефективні рішення стуія */
 .solution {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/effect-solution.jpg);
-  background-size: 1600px;
+ max-width: 1600px;
+  /* background-size: 1600px; */
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: cover; */
-  background-color: var(--footer-backround-color);
   padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .solution-text {
@@ -276,13 +276,15 @@ align-items: center;}
   justify-content: space-between;
   flex-basis: calc((100%-60px) / 3);
   row-gap: 30px;
-
-  /* align-content: stretch; */
 }
 
 /* .main-list > li:nth-child(3n + 1) {
   margin-left: 0px;
 } */
+.main-link a{text-decoration: none;
+font-family: inherit;
+color: inherit;}
+
 .main-link-title {
   /* margin: 20px 24px; */
   padding: 20px 24px;
@@ -292,9 +294,15 @@ align-items: center;}
 .main-link.img {
   margin-right: 0;
 }
+.main-link-list-foto{display: block;}
+.main-link-list-foto:hover,
+.main-link-list-foto:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
 
 /* .main-link{display: block;} */
 .main-link-lead {
+  /* font-family: 'Roboto';
+  font-style: normal; */
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -308,6 +316,9 @@ align-items: center;}
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
+/* .main-link:hover,
+.main-link:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);} */
 
 /* -------Студія------ */
 
@@ -322,8 +333,11 @@ align-items: center;}
 }
 
 .benefits-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  height: 120px;
   max-width: 270px;
   background: var(--background-btn);
     border-radius: 4px;
@@ -572,15 +586,9 @@ footer {
   display: flex;
 }
 .footer-social{
-  /* display: flex; */
-  justify-content: left;
-  align-items: center;
-  width: 206px;
-  margin-top: 12px;
   margin-left: 70px;
-  /* margin-top: -40px; */
-  /* margin-left: 0; */
 }
+
 .footer-invite-link{
   width: 44px;
   height: 44px;
@@ -592,11 +600,10 @@ footer {
 .footer-invite-link:not(:first-child){
   margin-left: 10px;}
 
-.footer-cont{
+.footer-cont
+{
   display: flex;
-justify-content: left;
-
-
+align-items: baseline;
 }
   .footer-invite-item{
     display: flex;
