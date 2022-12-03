@@ -56,9 +56,9 @@ ul {
 }
 
 /*---------------------------- Header portfolio studio----------------------------- */
-.container.container-header {
-  /* border-bottom: 1px solid #ececec; */
-}
+/* .container.container-header {
+  border-bottom: 1px solid #ececec;
+} */
 
 header {
   border-bottom: 1px solid #ececec;
@@ -129,7 +129,7 @@ header .container {
   margin-right: 50px;
 }
 
-.list>li:not(:last-child) {
+.list > li:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -160,7 +160,7 @@ header .container {
   justify-content: center;
 }
 
-.main-list-btn>li:nth-child(n + 2) {
+.main-list-btn > li:nth-child(n + 2) {
   margin-left: 8px;
 }
 
@@ -192,7 +192,8 @@ header .container {
 
 /* Секція ефективні рішення стуія */
 .solution {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/effect-solution.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/effect-solution.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -287,7 +288,7 @@ header .container {
   display: flex;
 }
 
-.benefits>li:not(:first-child) {
+.benefits > li:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -326,7 +327,7 @@ header .container {
   display: flex;
 }
 
-.about-pictures>li:not(:first-child) {
+.about-pictures > li:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -344,7 +345,7 @@ header .container {
   display: flex;
 }
 
-.team-foto>li:not(:first-child) {
+.team-foto > li:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -372,15 +373,17 @@ header .container {
   /* margin-bottom: 30px; */
   text-align: center;
 }
+
 /*---- Постійні клієнти studio ----*/
-.regular-customers{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+.regular-customers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--primery-color);
 }
+
 /*------------------------- Footer portfolio studio-------------------------*/
 .footer-studio {
   color: var(--text-btn-accent);
